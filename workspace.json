@@ -1,0 +1,1162 @@
+{
+  "id" : 1,
+  "name" : "Patient monitoring and control (PMC) workspace",
+  "description" : "This workspace documents the architecture of a generic Patient Monitoring and Control software",
+  "lastModifiedDate" : "2023-02-25T08:21:59Z",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJQYXRpZW50IG1vbml0b3JpbmcgYW5kIGNvbnRyb2wgKFBNQykgd29ya3NwYWNlIiAiVGhpcyB3b3Jrc3BhY2UgZG9jdW1lbnRzIHRoZSBhcmNoaXRlY3R1cmUgb2YgYSBnZW5lcmljIFBhdGllbnQgTW9uaXRvcmluZyBhbmQgQ29udHJvbCBzb2Z0d2FyZSJ7CgogICAgbW9kZWwgewogICAgICAgIC8vc29mdHdhcmUgc3lzdGVtcwogICAgICAgIHBtYWMgPSBzb2Z0d2FyZVN5c3RlbSAiUGF0aWVudCBNb25pdG9yaW5nIGFuZCBDb250cm9sIChQTUMpInsKICAgICAgICAgICAgLy8gY29udGFpbmVycwogICAgICAgICAgICB3ZWJGcm9udGVuZCA9IGNvbnRhaW5lciAiUE1DIFdlYiBGcm9udC1lbmQiICIiICIiICJXZWIiCiAgICAgICAgICAgIHBtY1NlcnZlciA9IGNvbnRhaW5lciAiUE1DIFNlcnZlciJ7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBncm91cCAiQnVzaW5lc3MgTG9naWMiIHsKICAgICAgICAgICAgICAgICAgICBwYXRpZW50RGF0YUFQSSA9IGNvbXBvbmVudCAiUGF0aWVudCBBUEkiICJwcm92aWRlIEFQSSBmb3IgYWxlcnRpbmcgcGF0aWVudHMgaW4gZW1lcmdlbmN5IGFuZCBnZXR0aW5nIHBhdGllbnRzIGxpc3RzIGluIHVzZXIncyBkZXBhcnRtZW50LCBwYXRpZW50cyBkZXRhaWxzIGFuZCBwcmVjc2NyaXB0aW9uIHJlY29yZHMiCiAgICAgICAgICAgICAgICAgICAgYmFyY29kZVByb2Nlc3NvciA9IGNvbXBvbmVudCAiUHJlc2NyaXB0aW9uIEJhcmNvZGUgUHJvY2Vzc29yIiAiUHJvY2VzcyBpbmZvcm1hdGlvbiBzY2FubmVkIGZyb20gdGhlIHByZXNjcmlwdGlvbiBiYXJjb2RlIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgZ3JvdXAgIkRvbWFpbiBNb2RlbCIgewogICAgICAgICAgICAgICAgICAgIHZpdGFsU2lnbnMgPSBjb21wb25lbnQgIlZpdGFsIFNpZ25zIE1vbml0b3JpbmciICJtb25pdGVyIHBhdGllbnRzIHZpdGFsIHNpZ25zIGFuZCByZXBvcnQgaW4gY2FzZSBvZiBlbWVyZ2VuY3kiCiAgICAgICAgICAgICAgICAgICAgcGF0aWVudHNMaXN0ID0gY29tcG9uZW50ICJQYXRpZW50cyBMaXN0IGFuZCBEZXRhaWwgU3RvcmFnZSIgInByb3ZpZGUgbGlzdCBvZiBwYXRpZW50cyBvciBwcm92aWRlIGRldGFpbHMgb2YgYSBwYXRpZW50IgogICAgICAgICAgICAgICAgICAgIGRldGFpbFJldHJpZXZhbCA9IGNvbXBvbmVudCAiUGF0aWVudCBEZXRhaWwgU3RvcmFnZSIgInByb3ZpZGUgZGV0YWlscyBvZiBvbmUgcGF0aWVudCIKICAgICAgICAgICAgICAgICAgICBwcmVzY3JpcHRpb25SZWNvcmQgPSBjb21wb25lbnQgIlByZWNyaXB0aW9uIFJlY29yZCBTdG9yYWdlIiAiZmlsdGVyIGFuZCBzdG9yZSB0aGUgbGlzdCBvZiBwYXRpZW50cyB3aG8gaGFzbid0IHRha2VuIHRoZWlyIHByZWNzY3JpcHRpb24iCiAgICAgICAgICAgICAgICAgICAgcGF0aWVudFNwZWNpZmljID0gY29tcG9uZW50ICJEZXBhcnRtZW50IFBhdGllbnRzIERhdGEgU3RvcmFnZSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGdyb3VwICJJbmZyYXN0cnVjdHVyZSIgewogICAgICAgICAgICAgICAgICAgIGRhdGFSZWFkZXIgPSBjb21wb25lbnQgIkRhdGEgUmVhZGVyIiAicHJvdmlkZSBhY2Nlc3MgdG8gcGF0aWVudHMgZGF0YSIKICAgICAgICAgICAgICAgICAgICBkYXRhV3JpdGVyID0gY29tcG9uZW50ICJQcmVzY3JpcHRpb24gRGF0YSBXcml0ZXIiICJ3cml0ZSBwcmVzY3JpcHRpb24gaW5mb3JtYXRpb24gZnJvbSBiYXJjb2RlIHNjYW5uZXIgdG8gZGIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgIWRvY3MgZG9jcwogICAgICAgIH0KCiAgICAgICAgLy9iYXJjb2RlIHNjYW5uZXIgaGFzIG1vcmUgc29mdHdhcmUgdG8gdW5wYWNrIHRoZSBjb250ZW50cyBvZiB0aGUgYmFyY29kZQogICAgICAgIC8vcHJvY2VzcyB0aGlzIHRoZW4gc2VuZCBpdCB0byB0aGUgc2VydmVyIHNvIGl0IGNhbiBiZSB3cml0dGVuIHRvIHRoZSBkYgogICAgICAgIGJhckNvZGUgPSBzb2Z0d2FyZVN5c3RlbSAiQmFyY29kZSBzY2FubmVyIiAiRXhpc3RpbmcgU3lzdGVtIgoKICAgICAgICBwcnRkcyA9IHNvZnR3YXJlU3lzdGVtICJQYXRpZW50cyBSZWFsIFRpbWUgRGF0YSBTeXN0ZW0iICJDb250YWlucyBkYXRhIGNvbmNlcm5pbmcgdGhlIHBhdGllbnQgaW4gcmVhbCB0aW1lIiAiRXhpc3RpbmcgU3lzdGVtIgogICAgICAgIHJvcCA9IHNvZnR3YXJlU3lzdGVtICJSZWdpc3RyeSBvZiBQYXRpZW50cyIgIkNvbnRhaW5zIGxpc3Qgb2YgY3VycmVudGx5IGhvc3BpdGFsaXplZCBwYXRpZW50cyIgIkV4aXN0aW5nIFN5c3RlbSIKCgogICAgICAgIC8vIHBlcnNvbnMKICAgICAgICBkb2N0b3JzID0gcGVyc29uICJEb2N0b3IiICJBIHBlcnNvbiAoZW1wbG95ZWUpIGZyb20gdGhlIEhvc3BpdGFsIHdobyBwcm92aWRlcyBjYXJlIHRvIHBhdGllbnRzIiAiRG9jIgogICAgICAgIHBhdGllbnRzID0gcGVyc29uICJQYXRpZW50IiAiQSBwZXJzb24gd2hvIGlzIGhvcGl0YWxpemVkIGFuZCBpcyBlcXVpcHBlZCB3aXRoIG1vbml0b3JpbmcgZGV2aWNlcyIgIlBhdCIKCiAgICAgICAgLy8gd3JpdGUgcHJlc2NyaXB0aW9uIHRvIGRhdGFiYXNlCiAgICAgICAgZG9jdG9ycyAtPiBiYXJDb2RlICJEb2N0b3JzIHVzZSB0aGUgYmFyY29kZSBzY2FubmVyIHRvIHJlYWQgdGhlIHByZXNjcmlwdGlvbiBkYXRhIG5lY2Vzc2FyeSIKICAgICAgICBiYXJjb2RlIC0+IGJhcmNvZGVQcm9jZXNzb3IgIlNlbmQgYmFyY29kZSB0byB0aGUgcHJvY2Vzc29yIHdoZXJlIGl0IHdpbGwgYmUgdW5wYWNrZWQiIAogICAgICAgIGJhcmNvZGVQcm9jZXNzb3IgLT4gZGF0YVdyaXRlciAiVW5wYWNrIHByZXNjcmlwdGlvbiBiYXJjb2RlIGluZm9ybWF0aW9uIGFuZCBzZW5kIGl0IHRvIHNlcnZlciB0byBiZSB3cml0dGVuIHRvIGRiIgogICAgICAgIGRhdGFXcml0ZXIgLT4gcHJ0ZHMgIlNlbmQgcHJlc2NyaXB0aW9uIGluZm9ybWF0aW9uIHRvIGRiIgogICAgICAgICMgdW5wYWNrQmFyY29kZSAtPiBkYXRhV3JpdGVyICJPbmNlIHRoZSBwcmVzY3JpcHRpb24gaXMgcHJvY2Vzc2VkIHNlbmQgaXQgdG8gdGhlIGRiICIKICAgICAgICAjIGRhdGFXcml0ZXIgLT4gcHJ0ZHMgIldyaXRlIHRoZSBwcmVzY3JpcHRpb24gZGF0YSB0byB0aGUgZGIiCiAgICAgICAgIyBiYXJjb2RlIC0+IHNjYW5uZXIKICAgICAgICAjIHNjYW5uZXIgLT4gZGF0YVdyaXRlciAiUmVhZCBpbiBwcmVzY3JpcHRpb24gaW5mb3JtYXRpb24iCiAgICAgICAgIyBkYXRhV3JpdGVyIC0+IHBydGRzICJXcml0ZSBwcmVzY3JpcHRpb24gaW5mb3JtYXRpb24gdG8gZGIiCiAgICAgICAgIAogICAgICAgIC8vIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiBwZXJzb25zIGFuZCBzeXN0ZW1zCiAgICAgICAgZG9jdG9ycyAtPiBwbWFjICJsb29rIHVwIHBhdGllbnRzIGRldGFpbHMgaW4gdGhlaXIgZGVwYXJ0bWVudHMgYXMgd2VsbCBhcyByZWNlaXZlIGFsZXJ0cyBhYm91dCBwYXRpZW50cyBpbiBlbWVyZ2VuY3kiCiAgICAgICAgcGF0aWVudHMgLT4gcHJ0ZHMgImlucHV0IGRhdGEoYmxvb2QgcHJlc3N1cmUsIHRlbXBlcmF0dXJlLCBoZWFydHJhdGUgYW5kIGluZm9ybSBicmVhayB3aXRob3V0LW1vbml0b3JpbmcpIgogICAgICAgIHBhdGllbnRzIC0+IHJvcCAic2lnbiB1cCBhbmQgc2lnbiBvZmYiCgogICAgICAgIC8vIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiBzeXN0ZW1zCiAgICAgICAgcG1hYyAtPiBwcnRkcyAicmVhZCBkYXRhIGZyb20iCiAgICAgICAgcm9wIC0+IHBydGRzICJpbmZvcm0gcGF0aWVudCBsaXN0cyBjaGFuZ2UiCgogICAgICAgIC8vIHJlbGF0aW9uc2hpcHMgYmV0d2VlbiBwZXJzb25zIGFuZCBjb250YWluZXJzCiAgICAgICAgZG9jdG9ycyAtPiB3ZWJGcm9udGVuZCAic2VhcmNoIGFuZCB2aWV3IHBhdGllbnRzIGRldGFpbHMgaW47IHJlY2VpdmUgYW5kIHZpZXcgcGF0aWVudHMgYWxlcnRzIGluIgoKICAgICAgICAvLyByZWxhdGlvbnNoaXBzIGJldHdlZW4gY29udGFpbmVycyBhbmQgc3lzdGVtcwogICAgICAgIHBtY1NlcnZlciAtPiBwcnRkcyAicmVhZCBmcm9tIHRoZSBkYXRhIHN5c3RlbSIKCiAgICAgICAgLy9yZWxhdGlvbnNoaXBzIGJldHdlZW4gY29udGFpbmVycyAKICAgICAgICB3ZWJGcm9udGVuZCAtPiBwbWNTZXJ2ZXIgInVzZSB0byBkZWxpdmVyIGZ1bmN0aW9uYWxpdHkiCgogICAgICAgIC8vcmVsYXRpb25zaGlwcyBiZXR3ZWVuIGNvbnRhaW5lcnMgYW5kIGNvbXBvbmVudHMKICAgICAgICB3ZWJGcm9udGVuZCAtPiBwYXRpZW50RGF0YUFQSSAibWFrZSBBUEkgY2FsbHMgdG8iCiAgICAgICAgZGF0YVJlYWRlciAtPiBwcnRkcyAicHVsbCBpbmZvcm1hdGlvbiBmcm9tIGRiIgoKICAgICAgICAvL3JlbGF0aW9uc2hpcHMgYmV0d2VlbiBjb21wb25lbnRzCiAgICAgICAgdml0YWxTaWducyAtPiBwYXRpZW50RGF0YUFQSSAiaW5mb3JtIGVtZXJnZW5jeSBvZiBsaXN0IG9mIHBhdGllbnRzIgogICAgICAgIHZpdGFsU2lnbnMgLT4gcGF0aWVudFNwZWNpZmljICJyZXRyaWV2ZSBwYXRpZW50IGRhdGEgZnJvbSIKICAgICAgICB2aXRhbFNpZ25zIC0+IHBhdGllbnRzTGlzdCAicHJvdmlkZSBsaXN0IG9mIHBhdGllbnRzIHdobyBhcmUgaW4gZW1lcmdlbmN5IgoKICAgICAgICBwYXRpZW50RGF0YUFQSSAtPiBwYXRpZW50c0xpc3QgInJldHJpZXZlIHBhdGllbnQgbGlzdCBhbmQgZGV0YWlsIG9mIG9uZSBwYXRpZW50IGlmIG5lZWRlZCIKCiAgICAgICAgcGF0aWVudHNMaXN0IC0+IGRldGFpbFJldHJpZXZhbCAiaW5mb3JtIHRvIGdldCBkZXRhaWxzIG9mIG9uZSBwYXRpZW50IgogICAgICAgIHBhdGllbnRzTGlzdCAtPiBwYXRpZW50U3BlY2lmaWMgImdldCBsaXN0IG9mIHBhdGllbnRzIGZyb20gdXNlcidzIGRlcGFydG1lbnQiCgogICAgICAgIHByZXNjcmlwdGlvblJlY29yZCAtPiBwYXRpZW50c0xpc3QgInByb3ZpZGUgbGlzdCBvZiBwYXRpZW50cyB3aG8gaGFzbid0IHRha2VuIHRoZWlyIHByZWNzY3JpcHRpb24iCiAgICAgICAgcHJlc2NyaXB0aW9uUmVjb3JkIC0+IHBhdGllbnRTcGVjaWZpYyAicmV0cmlldmUgcGF0aWVudCBkYXRhIGZyb20iCgogICAgICAgIGRldGFpbFJldHJpZXZhbCAtPiBwYXRpZW50c0xpc3QgInByb3ZpZGUgZGV0YWlscyBvZiBvbmUgcGF0aWVudCIKICAgICAgICBkZXRhaWxSZXRyaWV2YWwgLT4gcGF0aWVudFNwZWNpZmljICJyZXRyZWl2ZSBkZXRhaWwgb2Ygb25lIHBhdGllbnQiCgogICAgICAgIHBhdGllbnRTcGVjaWZpYyAtPiBkYXRhUmVhZGVyICJ1c2UgdG8gcmV0cmlldmUgcGF0aWVudHMgZGF0YSBmcm9tIHNwZWNpZmljIGRlcGFydG1lbnQiCgogICAgICAgIC8vZGVwbG95bWVudAoKICAgICAgICBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkRlcGxveW1lbnQiICB7CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJQYXRpZW50J3MgUG9ydGFibGUgVml0YWwgU2lnbnMgTW9uaXRvciBEZXZpY2UiICIiICJNaWNyb0NvbnRyb2xsZXIiICB7CiAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiV2ViIEJyb3dzZXIiICIiICJDaHJvbWUsIEZpcmVmb3ggb3IgRWRnZSIgICB7CiAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2Ugd2ViRnJvbnRlbmQKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiRG9jdG9yJ3MgUG9ydGFibGUgVXNlciBEZXZpY2UiICIiICJBbmRyb2lkIiAgewogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIldlYiBCcm93c2VyIiAiIiAiQ2hyb21lLCBGaXJlZm94IG9yIEVkZ2UiICAgewogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHdlYkZyb250ZW5kCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkRvY3RvcidzIEJhcmNvZGUgRGV2aWNlIiAiIiAiQW5kcm9pZCIgIHsKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJBbmRyb2lkIFN0dWRpbyArIFNESyIgewogICAgICAgICAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtSW5zdGFuY2UgYmFyQ29kZQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJWaXJ0dWFsIFNlcnZlciBBIiAiIiAiRmVkb3JhIiB7CiAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiTm9kZS5qcyIgIiIgIk5vZGUuanMgMTQuKiIgewogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHBtY1NlcnZlcgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJWaXJ0dWFsIFNlcnZlciBCIiAiIiAiRmVkb3JhIiB7CiAgICAgICAgICAgICAgICAgICAgc29mdHdhcmVTeXN0ZW1JbnN0YW5jZSBwcnRkcwogICAgICAgICAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtSW5zdGFuY2Ugcm9wCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN5c3RlbWxhbmRzY2FwZSAiU3lzdGVtTGFuZHNjYXBlX1ZpZXciIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIHN5c3RlbUNvbnRleHQgYmFyY29kZSAiQmFyY29kZV9TeXN0ZW1Db250ZXh0X1ZpZXciewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgc3lzdGVtQ29udGV4dCBwbWFjICJQTUNfU3lzdGVtQ29udGV4dF9WaWV3InsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBwbWFjICJQTUNfQ29udGFpbmVyX1ZpZXciewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IHBtY1NlcnZlciAiUE1DX1NlcnZlcl9Db21wb25lbnRfVmlldyJ7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgfQoKICAgICAgICBzeXN0ZW1Db250ZXh0IHBydGRzICJQUlREU19TeXN0ZW1Db250ZXh0X1ZpZXciewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgZGVwbG95bWVudCBwbWFjICJEZXBsb3ltZW50IiAiUGF0aWVudE1vbml0b3JpbmdhbmRDb250cm9sUE1DX0xpdmVfRGVwbG95bWVudCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyAqICJIb3NwaXRhbGl6YXRpb25fU3lzdGVtX0R5bmFtaWNfVmlldyIgIlBhdGllbnQgTW9uaXRvcmluZyBhbmQgQ29udHJvbCAtIEhvc3BpdGFsaXphdGlvbiBTY2VuYXJpbyJ7CiAgICAgICAgICAgIHBhdGllbnRzIC0+IHJvcCAgInJlZ2lzdGVyIGhvc3BpdGFsaXphdGlvbiIKICAgICAgICAgICAgcm9wIC0+IHBydGRzICJ1cGRhdGUgcGF0aWVudCBsaXN0IgogICAgICAgICAgICAvL3BydGRzIC0+IHBtYWMgImluZm9ybSB0byB1cGRhdGUiCiAgICAgICAgICAgIC8vZGF0YVJlYWRlciAtPiB3ZWJGcm9udGVuZCAidXBkYXRlIHRoZSBjYWNoZSIKICAgICAgICAgICAgYmFyQ29kZSAtPiBwbWFjICJwcmVzY3JpYmUgbWVkaWNpbmUiCiAgICAgICAgICAgIHBtYWMgLT4gcHJ0ZHMgIndyaXRlIHByZXNjcmlwdGlvbiIKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBwbWNTZXJ2ZXIgIlZpdGFsc19TaWduc19Db21wb25lbnRfRHluYW1pY19WaWV3IiAiUGF0aWVudCBNb25pdG9yaW5nIGFuZCBDb250cm9sIC0gVml0YWwgU2lnbnMgTW9uaXRvcnkgU2NlbmFyaW8iewogICAgICAgICAgICB2aXRhbFNpZ25zIC0+IHBhdGllbnRTcGVjaWZpYyAiaW5mb3JtIHRvIGZldGNoIGxhdGVzdCBkYXRhIgogICAgICAgICAgICBwYXRpZW50U3BlY2lmaWMgLT4gZGF0YVJlYWRlciAicXVlcnkgYW5kIHN0b3JlIHRoZSBsYXN0ZXN0IGRhdGEiCiAgICAgICAgICAgIGRhdGFSZWFkZXIgLT4gcHJ0ZHMgImZldGNoIGxhdGVzdCBkYXRhIgogICAgICAgICAgICBwcnRkcyAtPiBkYXRhUmVhZGVyICJyZXR1cm4gbGF0ZXN0IGRhdGEiCiAgICAgICAgICAgIGRhdGFSZWFkZXIgLT4gcGF0aWVudFNwZWNpZmljICJyZXR1cm4gdGhlIGRhdGEgZm9yIGl0IHRvIHN0b3JlIgogICAgICAgICAgICBwYXRpZW50U3BlY2lmaWMgLT4gdml0YWxTaWducyAicmV0dXJuIGxhdGVzdCBkYXRhIgogICAgICAgICAgICB2aXRhbFNpZ25zIC0+IHBhdGllbnREYXRhQVBJICJpbmZvcm0gZW1lcmdlbmN5IGlmIG5lY2Vzc2FyeSIKICAgICAgICAgICAgcGF0aWVudERhdGFBUEkgLT4gd2ViRnJvbnRlbmQgImluZm9ybSBlbWVyZ2VuY3kgaWYgbmVjZXNzYXJ5IgogICAgICAgICAgICBhdXRvTGF5b3V0ICAKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgcG1jU2VydmVyICJEb2N0b3JfQ2hlY2tfQ29tcG9uZW50X0R5bmFtaWNfVmlldyIgIlBhdGllbnQgTW9uaXRvcmluZyBhbmQgQ29udHJvbCAtIERvY3RvciBDaGVjayBTY2VuYXJpbyJ7CiAgICAgICAgICAgIHdlYkZyb250ZW5kIC0+IHBhdGllbnREYXRhQVBJICJjaGVjayBwYXRpZW50cyBzdGF0dXMiCiAgICAgICAgICAgIHBhdGllbnREYXRhQVBJIC0+IHdlYkZyb250ZW5kICJyZXR1cm4gZGF0YSIKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxNTVCN0EKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMyMDhBQjkKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMyN0EzREEKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiRXhpc3RpbmcgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM5OTk5OTkKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiV2ViIiAgewogICAgICAgICAgICAgICAgc2hhcGUgV2ViQnJvd3NlcgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJJbmZyYXN0cnVjdHVyZSIgIHsKICAgICAgICAgICAgICAgIHNoYXBlIFBpcGUKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiTG9naWMiICB7CiAgICAgICAgICAgICAgICBzaGFwZSBDb21wb25lbnQKICAgICAgICAgICAgfQoKICAgICAgICAgICAgZWxlbWVudCAiTW9kZWwiICB7CiAgICAgICAgICAgICAgICBzaGFwZSBSb3VuZGVkQm94CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgICAgc2hhcGUgUGVyc29uCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIkRvYyIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNjQ5RUI4CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KCiAgICAgICAgfQogICAgfSAgIAoKfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "16",
+      "tags" : "Element,Person,Doc",
+      "properties" : {
+        "structurizr.dsl.identifier" : "doctors"
+      },
+      "name" : "Doctor",
+      "description" : "A person (employee) from the Hospital who provides care to patients",
+      "relationships" : [ {
+        "id" : "18",
+        "tags" : "Relationship",
+        "sourceId" : "16",
+        "destinationId" : "13",
+        "description" : "Doctors use the barcode scanner to read the prescription data necessary"
+      }, {
+        "id" : "26",
+        "tags" : "Relationship",
+        "sourceId" : "16",
+        "destinationId" : "1",
+        "description" : "look up patients details in their departments as well as receive alerts about patients in emergency"
+      }, {
+        "id" : "31",
+        "tags" : "Relationship",
+        "sourceId" : "16",
+        "destinationId" : "2",
+        "description" : "search and view patients details in; receive and view patients alerts in"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "17",
+      "tags" : "Element,Person,Pat",
+      "properties" : {
+        "structurizr.dsl.identifier" : "patients"
+      },
+      "name" : "Patient",
+      "description" : "A person who is hopitalized and is equipped with monitoring devices",
+      "relationships" : [ {
+        "id" : "27",
+        "tags" : "Relationship",
+        "sourceId" : "17",
+        "destinationId" : "14",
+        "description" : "input data(blood pressure, temperature, heartrate and inform break without-monitoring)"
+      }, {
+        "id" : "28",
+        "tags" : "Relationship",
+        "sourceId" : "17",
+        "destinationId" : "15",
+        "description" : "sign up and sign off"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "1",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "pmac"
+      },
+      "name" : "Patient Monitoring and Control (PMC)",
+      "relationships" : [ {
+        "id" : "25",
+        "sourceId" : "1",
+        "destinationId" : "14",
+        "description" : "Send prescription information to db",
+        "linkedRelationshipId" : "23"
+      }, {
+        "id" : "29",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "14",
+        "description" : "read data from"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "2",
+        "tags" : "Element,Container,Web",
+        "properties" : {
+          "structurizr.dsl.identifier" : "webfrontend"
+        },
+        "name" : "PMC Web Front-end",
+        "relationships" : [ {
+          "id" : "33",
+          "tags" : "Relationship",
+          "sourceId" : "2",
+          "destinationId" : "3",
+          "description" : "use to deliver functionality"
+        }, {
+          "id" : "34",
+          "tags" : "Relationship",
+          "sourceId" : "2",
+          "destinationId" : "4",
+          "description" : "make API calls to"
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "3",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "pmcserver"
+        },
+        "name" : "PMC Server",
+        "relationships" : [ {
+          "id" : "24",
+          "sourceId" : "3",
+          "destinationId" : "14",
+          "description" : "Send prescription information to db",
+          "linkedRelationshipId" : "23"
+        }, {
+          "id" : "32",
+          "tags" : "Relationship",
+          "sourceId" : "3",
+          "destinationId" : "14",
+          "description" : "read from the data system"
+        } ],
+        "components" : [ {
+          "id" : "11",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "datareader"
+          },
+          "name" : "Data Reader",
+          "description" : "provide access to patients data",
+          "relationships" : [ {
+            "id" : "35",
+            "tags" : "Relationship",
+            "sourceId" : "11",
+            "destinationId" : "14",
+            "description" : "pull information from db"
+          } ],
+          "group" : "Infrastructure",
+          "size" : 0
+        }, {
+          "id" : "12",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "datawriter"
+          },
+          "name" : "Prescription Data Writer",
+          "description" : "write prescription information from barcode scanner to db",
+          "relationships" : [ {
+            "id" : "23",
+            "tags" : "Relationship",
+            "sourceId" : "12",
+            "destinationId" : "14",
+            "description" : "Send prescription information to db"
+          } ],
+          "group" : "Infrastructure",
+          "size" : 0
+        }, {
+          "id" : "7",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "patientslist"
+          },
+          "name" : "Patients List and Detail Storage",
+          "description" : "provide list of patients or provide details of a patient",
+          "relationships" : [ {
+            "id" : "40",
+            "tags" : "Relationship",
+            "sourceId" : "7",
+            "destinationId" : "8",
+            "description" : "inform to get details of one patient"
+          }, {
+            "id" : "41",
+            "tags" : "Relationship",
+            "sourceId" : "7",
+            "destinationId" : "10",
+            "description" : "get list of patients from user's department"
+          } ],
+          "group" : "Domain Model",
+          "size" : 0
+        }, {
+          "id" : "6",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "vitalsigns"
+          },
+          "name" : "Vital Signs Monitoring",
+          "description" : "moniter patients vital signs and report in case of emergency",
+          "relationships" : [ {
+            "id" : "36",
+            "tags" : "Relationship",
+            "sourceId" : "6",
+            "destinationId" : "4",
+            "description" : "inform emergency of list of patients"
+          }, {
+            "id" : "37",
+            "tags" : "Relationship",
+            "sourceId" : "6",
+            "destinationId" : "10",
+            "description" : "retrieve patient data from"
+          }, {
+            "id" : "38",
+            "tags" : "Relationship",
+            "sourceId" : "6",
+            "destinationId" : "7",
+            "description" : "provide list of patients who are in emergency"
+          } ],
+          "group" : "Domain Model",
+          "size" : 0
+        }, {
+          "id" : "8",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "detailretrieval"
+          },
+          "name" : "Patient Detail Storage",
+          "description" : "provide details of one patient",
+          "relationships" : [ {
+            "id" : "44",
+            "tags" : "Relationship",
+            "sourceId" : "8",
+            "destinationId" : "7",
+            "description" : "provide details of one patient"
+          }, {
+            "id" : "45",
+            "tags" : "Relationship",
+            "sourceId" : "8",
+            "destinationId" : "10",
+            "description" : "retreive detail of one patient"
+          } ],
+          "group" : "Domain Model",
+          "size" : 0
+        }, {
+          "id" : "10",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "patientspecific"
+          },
+          "name" : "Department Patients Data Storage",
+          "relationships" : [ {
+            "id" : "46",
+            "tags" : "Relationship",
+            "sourceId" : "10",
+            "destinationId" : "11",
+            "description" : "use to retrieve patients data from specific department"
+          } ],
+          "group" : "Domain Model",
+          "size" : 0
+        }, {
+          "id" : "4",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "patientdataapi"
+          },
+          "name" : "Patient API",
+          "description" : "provide API for alerting patients in emergency and getting patients lists in user's department, patients details and precscription records",
+          "relationships" : [ {
+            "id" : "39",
+            "tags" : "Relationship",
+            "sourceId" : "4",
+            "destinationId" : "7",
+            "description" : "retrieve patient list and detail of one patient if needed"
+          } ],
+          "group" : "Business Logic",
+          "size" : 0
+        }, {
+          "id" : "9",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "prescriptionrecord"
+          },
+          "name" : "Precription Record Storage",
+          "description" : "filter and store the list of patients who hasn't taken their precscription",
+          "relationships" : [ {
+            "id" : "42",
+            "tags" : "Relationship",
+            "sourceId" : "9",
+            "destinationId" : "7",
+            "description" : "provide list of patients who hasn't taken their precscription"
+          }, {
+            "id" : "43",
+            "tags" : "Relationship",
+            "sourceId" : "9",
+            "destinationId" : "10",
+            "description" : "retrieve patient data from"
+          } ],
+          "group" : "Domain Model",
+          "size" : 0
+        }, {
+          "id" : "5",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "barcodeprocessor"
+          },
+          "name" : "Prescription Barcode Processor",
+          "description" : "Process information scanned from the prescription barcode",
+          "relationships" : [ {
+            "id" : "22",
+            "tags" : "Relationship",
+            "sourceId" : "5",
+            "destinationId" : "12",
+            "description" : "Unpack prescription barcode information and send it to server to be written to db"
+          } ],
+          "group" : "Business Logic",
+          "size" : 0
+        } ],
+        "documentation" : { }
+      } ],
+      "documentation" : {
+        "sections" : [ {
+          "title" : "Context",
+          "content" : "## Context\n\nThe Patient Monitoring and Control (PMC) is the interface between doctors and the Patients real time date system, where is stored all the data about the patients. Firstly, it allows doctors to look at their patients lists and get details about them. Secondly, using the bar code scanner, doctors can write adapted drugs prescriptions and the PMC treats the requests and then transmit it, to be write in the database.\n\nThe described PMC context is displayed on the following [C4 model](https://c4model.com) [software system](https://c4model.com/#SystemContextDiagram) diagram.\n\n\n![](embed:SystemLandscape_View)",
+          "format" : "Markdown",
+          "filename" : "02-context.md",
+          "order" : 2
+        }, {
+          "title" : "Roadmap",
+          "content" : "## Roadmap\n\nThis document describes the architecture of the Patient Monitoring and Control (PMC).\nIt is intended primarily for the PMC development team.\nIt can be also useful for other development team working for the hospital.",
+          "format" : "Markdown",
+          "filename" : "01-roadmap.md",
+          "order" : 1
+        }, {
+          "title" : "Views",
+          "content" : "## Views\n\n### How are the views documented?\n\nThe software architecture of PMC is further documented according to the [C4 model](https://c4model.com/) using its 2 levels - [container](https://c4model.com/#ContainerDiagram) level and [component](https://c4model.com/#ComponentDiagram) level.\nThe documentation also uses supplementary diagrams - [deployment diagrams](https://c4model.com/#DeploymentDiagram) and [dynamic diagrams](https://c4model.com/#DynamicDiagram).\n\n### PMC Decomposition View\n#### PMC Decomposition View - Container Level\n\nPMC business functionality is implemented by the PMC Server container.\nDoctors interact with a web application provided by PMC Web Front-end container.\nThe server container uses the Patients Real Time Data System to read and write prescriptions into the database. The corrects prescriptions are directly provided to the PMC Server by the Barcode Scanner. \n\n\n![](embed:PMC_Container_View)\n\n#### PMC Decomposition View - Component Level\n\nPMC Server implements the business functionality of PMC.\nIts internal architecture comprises 3 layers:\n* Domain Model represents the business domain of PMC which is data sets and their distributions. Its components represent the domain as a basic object model with simple get/set operations.\n* Business Logic implements all the business logic on top of the domain model.\n* Infrastructure implements the interaction with the other containers through APIs and gateways.\n\n![](embed:PMC_Server_Component_View)\n\n### PMC Dynamic View\n#### Hospitalization System Dynamic View\n\nThe patients register to get in the hospital, consequently the list of patients is updated. Then doctors can write a new prescription using the barcode scanner. Finally, the PMC treats the request to write it in the database.\n\n![](embed:Hospitalization_System_Dynamic_View)\n\n#### Vital Signs Component Dynamic View\nIn a more detail, the Vital Signs Monitering Component informs Data Storage to store the lastest data fetched from the Data Reader, so the request is sent all the way to the Data system which returns the latest data to the Data Storage which will transmit it to the Vital Signs Monitering Component to analyze. Finally, Vital Signs Monitering Component will inform the Patient API to send an emergency alert to the Web Front-end if necessary.\n\n![](embed:Vitals_Signs_Component_Dynamic_View)\n\n#### Doctor Check Component Dynamic View\nIn a more detail, the doctor needs to access the patient detail, he/she will only needs to inform the Patient API who will return the data to the doctor\n\n![](embed:Doctor_Check_Component_Dynamic_View)\n\n### PMC Deployment View\n![](embed:PatientMonitoringandControlPMC_Live_Deployment)\n",
+          "format" : "Markdown",
+          "filename" : "03-views.md",
+          "order" : 3
+        } ]
+      }
+    }, {
+      "id" : "13",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "barcode"
+      },
+      "name" : "Barcode scanner",
+      "description" : "Existing System",
+      "relationships" : [ {
+        "id" : "19",
+        "tags" : "Relationship",
+        "sourceId" : "13",
+        "destinationId" : "5",
+        "description" : "Send barcode to the processor where it will be unpacked"
+      }, {
+        "id" : "20",
+        "sourceId" : "13",
+        "destinationId" : "3",
+        "description" : "Send barcode to the processor where it will be unpacked",
+        "linkedRelationshipId" : "19"
+      }, {
+        "id" : "21",
+        "sourceId" : "13",
+        "destinationId" : "1",
+        "description" : "Send barcode to the processor where it will be unpacked",
+        "linkedRelationshipId" : "19"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "14",
+      "tags" : "Element,Software System,Existing System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "prtds"
+      },
+      "name" : "Patients Real Time Data System",
+      "description" : "Contains data concerning the patient in real time",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "15",
+      "tags" : "Element,Software System,Existing System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "rop"
+      },
+      "name" : "Registry of Patients",
+      "description" : "Contains list of currently hospitalized patients",
+      "relationships" : [ {
+        "id" : "30",
+        "tags" : "Relationship",
+        "sourceId" : "15",
+        "destinationId" : "14",
+        "description" : "inform patient lists change"
+      } ],
+      "location" : "Unspecified",
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "47",
+      "tags" : "Element,Deployment Node",
+      "name" : "Patient's Portable Vital Signs Monitor Device",
+      "environment" : "Deployment",
+      "technology" : "MicroController",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "48",
+        "tags" : "Element,Deployment Node",
+        "name" : "Web Browser",
+        "environment" : "Deployment",
+        "technology" : "Chrome, Firefox or Edge",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "49",
+          "tags" : "Container Instance",
+          "relationships" : [ {
+            "id" : "60",
+            "sourceId" : "49",
+            "destinationId" : "58",
+            "description" : "use to deliver functionality",
+            "linkedRelationshipId" : "33"
+          } ],
+          "environment" : "Deployment",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "2"
+        } ]
+      } ]
+    }, {
+      "id" : "50",
+      "tags" : "Element,Deployment Node",
+      "name" : "Doctor's Portable User Device",
+      "environment" : "Deployment",
+      "technology" : "Android",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "51",
+        "tags" : "Element,Deployment Node",
+        "name" : "Web Browser",
+        "environment" : "Deployment",
+        "technology" : "Chrome, Firefox or Edge",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "52",
+          "tags" : "Container Instance",
+          "relationships" : [ {
+            "id" : "59",
+            "sourceId" : "52",
+            "destinationId" : "58",
+            "description" : "use to deliver functionality",
+            "linkedRelationshipId" : "33"
+          } ],
+          "environment" : "Deployment",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "2"
+        } ]
+      } ]
+    }, {
+      "id" : "53",
+      "tags" : "Element,Deployment Node",
+      "name" : "Doctor's Barcode Device",
+      "environment" : "Deployment",
+      "technology" : "Android",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "54",
+        "tags" : "Element,Deployment Node",
+        "name" : "Android Studio + SDK",
+        "environment" : "Deployment",
+        "instances" : "1",
+        "softwareSystemInstances" : [ {
+          "id" : "55",
+          "tags" : "Software System Instance",
+          "relationships" : [ {
+            "id" : "61",
+            "sourceId" : "55",
+            "destinationId" : "58",
+            "description" : "Send barcode to the processor where it will be unpacked",
+            "linkedRelationshipId" : "20"
+          } ],
+          "environment" : "Deployment",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "softwareSystemId" : "13"
+        } ]
+      } ]
+    }, {
+      "id" : "56",
+      "tags" : "Element,Deployment Node",
+      "name" : "Virtual Server A",
+      "environment" : "Deployment",
+      "technology" : "Fedora",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "57",
+        "tags" : "Element,Deployment Node",
+        "name" : "Node.js",
+        "environment" : "Deployment",
+        "technology" : "Node.js 14.*",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "58",
+          "tags" : "Container Instance",
+          "relationships" : [ {
+            "id" : "64",
+            "sourceId" : "58",
+            "destinationId" : "63",
+            "description" : "Send prescription information to db",
+            "linkedRelationshipId" : "24"
+          }, {
+            "id" : "65",
+            "sourceId" : "58",
+            "destinationId" : "63",
+            "description" : "read from the data system",
+            "linkedRelationshipId" : "32"
+          } ],
+          "environment" : "Deployment",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "3"
+        } ]
+      } ]
+    }, {
+      "id" : "62",
+      "tags" : "Element,Deployment Node",
+      "name" : "Virtual Server B",
+      "environment" : "Deployment",
+      "technology" : "Fedora",
+      "instances" : "1",
+      "softwareSystemInstances" : [ {
+        "id" : "63",
+        "tags" : "Software System Instance",
+        "environment" : "Deployment",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "softwareSystemId" : "14"
+      }, {
+        "id" : "66",
+        "tags" : "Software System Instance",
+        "relationships" : [ {
+          "id" : "67",
+          "sourceId" : "66",
+          "destinationId" : "63",
+          "description" : "inform patient lists change",
+          "linkedRelationshipId" : "30"
+        } ],
+        "environment" : "Deployment",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "softwareSystemId" : "15"
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemLandscapeViews" : [ {
+      "key" : "SystemLandscape_View",
+      "order" : 1,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "29"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "27"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "30"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "15",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "systemContextViews" : [ {
+      "key" : "PMC_SystemContext_View",
+      "order" : 3,
+      "softwareSystemId" : "1",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "29"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "21"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "Barcode_SystemContext_View",
+      "order" : 2,
+      "softwareSystemId" : "13",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "21"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "PRTDS_SystemContext_View",
+      "order" : 6,
+      "softwareSystemId" : "14",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "relationships" : [ {
+        "id" : "29"
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "27"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "30"
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "15",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "PMC_Container_View",
+      "order" : 4,
+      "softwareSystemId" : "1",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "32"
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "20"
+      } ],
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "PMC_Server_Component_View",
+      "order" : 5,
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "3",
+      "externalContainerBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "40"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "43"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "39"
+      }, {
+        "id" : "19"
+      } ],
+      "elements" : [ {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "7",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "key" : "Vitals_Signs_Component_Dynamic_View",
+      "order" : 9,
+      "description" : "Patient Monitoring and Control - Vital Signs Monitory Scenario",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "37",
+        "description" : "inform to fetch latest data",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "46",
+        "description" : "query and store the lastest data",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "35",
+        "description" : "fetch latest data",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "35",
+        "description" : "return latest data",
+        "order" : "4",
+        "response" : true
+      }, {
+        "id" : "46",
+        "description" : "return the data for it to store",
+        "order" : "5",
+        "response" : true
+      }, {
+        "id" : "37",
+        "description" : "return latest data",
+        "order" : "6",
+        "response" : true
+      }, {
+        "id" : "36",
+        "description" : "inform emergency if necessary",
+        "order" : "7",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "inform emergency if necessary",
+        "order" : "8",
+        "response" : true
+      } ],
+      "elements" : [ {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "Hospitalization_System_Dynamic_View",
+      "order" : 8,
+      "description" : "Patient Monitoring and Control - Hospitalization Scenario",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "28",
+        "description" : "register hospitalization",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "30",
+        "description" : "update patient list",
+        "order" : "2",
+        "response" : false
+      }, {
+        "id" : "21",
+        "description" : "prescribe medicine",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "25",
+        "description" : "write prescription",
+        "order" : "4",
+        "response" : false
+      } ],
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "15",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      } ]
+    }, {
+      "key" : "Doctor_Check_Component_Dynamic_View",
+      "order" : 10,
+      "description" : "Patient Monitoring and Control - Doctor Check Scenario",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "elementId" : "3",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "34",
+        "description" : "check patients status",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "34",
+        "description" : "return data",
+        "order" : "2",
+        "response" : true
+      } ],
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "PatientMonitoringandControlPMC_Live_Deployment",
+      "order" : 7,
+      "softwareSystemId" : "1",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "environment" : "Deployment",
+      "relationships" : [ {
+        "id" : "61"
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "59"
+      } ],
+      "elements" : [ {
+        "id" : "55",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "66",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "56",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "57",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "47",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "58",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "48",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "49",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "50",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "51",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "62",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "52",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "63",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "53",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "54",
+        "x" : 0,
+        "y" : 0
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Software System",
+          "background" : "#155b7a",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Container",
+          "background" : "#208ab9",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Component",
+          "background" : "#27a3da",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Existing System",
+          "background" : "#999999",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Web",
+          "shape" : "WebBrowser"
+        }, {
+          "tag" : "Infrastructure",
+          "shape" : "Pipe"
+        }, {
+          "tag" : "Logic",
+          "shape" : "Component"
+        }, {
+          "tag" : "Model",
+          "shape" : "RoundedBox"
+        }, {
+          "tag" : "Person",
+          "shape" : "Person"
+        }, {
+          "tag" : "Doc",
+          "background" : "#649eb8",
+          "color" : "#ffffff"
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "PRTDS_SystemContext_View"
+    }
+  }
+}
